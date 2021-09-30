@@ -1,6 +1,8 @@
 
 # Go-Travels
 
+https://sank8-2.github.io/Go-Travel/
+
 Web-Page for Go Travels
 
 All are welcome and free to suggest any updates into the site.
