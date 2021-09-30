@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Travel</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">Go Travel</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/explore.html">Explore</a>
+                <a href="pages/gallery.html">Gallery</a>
+                <a href="pages/contact.html">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <video src="media/Heritage.mp4" class="video active" autoplay muted loop></video>
+        <video src="media/monsoon.mp4" class="video" autoplay muted loop></video>
+        <video src="media/Nature Wildlife.mp4" class="video" autoplay muted loop></video>
+        <video src="media/food-and-cuisine.mp4" class="video" autoplay muted loop></video>
+        <video src="media/Luxury Home.mp4" class="video" autoplay muted loop></video>
+        <video src="media/Yoga & Wellness Home.mp4" class="video" autoplay muted loop></video>
+        <video src="media/World Heritage Sites Of India.mp4" class="video" autoplay muted loop></video>
+        <video src="media/Spiritual Banner.mp4" class="video" autoplay muted loop></video>
+        <div class="content active">
+            Hi
+        </div>
+        <div class="content">1</div>
+        <div class="content">2</div>
+        <div class="content">3</div>
+        <div class="content">4</div>
+        <div class="content">5</div>
+        <div class="content">6</div>
+        <div class="content">7</div>
+        
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="navbut active"></div>
+            <div class="navbut"></div>
+            <div class="navbut"></div>
+            <div class="navbut"></div>
+            <div class="navbut"></div>
+            <div class="navbut"></div>
+            <div class="navbut"></div>
+            <div class="navbut"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javacript for responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navigation.classList.toggle("active");
+        });
+    
+        //Javacript for video slider navigation
+        const btns = document.querySelectorAll(".navbut");
+        const slides = document.querySelectorAll(".video");
+        const contents = document.querySelectorAll(".content");
+    
+        var sliderNav = function(manual){
+          btns.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+    
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+    
+          contents.forEach((content) => {
+            content.classList.remove("active");
+          });
+    
+          btns[manual].classList.add("active");
+          slides[manual].classList.add("active");
+          contents[manual].classList.add("active");
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            sliderNav(i);
+          });
+        });
+        </script>
+    
+</body>
+</html>
