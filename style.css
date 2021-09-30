@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
+:root{
+    --logoColor: rgb(230,250,225);
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+.globe{
+    border-radius: 50%;
+    border: 2px solid white;
+}
 
 header{
     z-index: 999;
@@ -40,7 +46,7 @@ header .navigation .navigation-items a{
     font-weight: 500;
     text-decoration: none;
     margin-left: 30px;
-    transition: 0.3s ease;
+    transition: 0.9s ease;
 }
   
 header .navigation .navigation-items a:before{
@@ -51,7 +57,7 @@ header .navigation .navigation-items a:before{
     height: 3px;
     bottom: 0;
     left: 0;
-    transition: 0.3s ease;
+    transition: 0.9s ease;
 }
   
 header .navigation .navigation-items a:hover:before{
@@ -121,6 +127,18 @@ section{
     font-weight: 500;
     text-decoration: none;
     border-radius: 2px;
+    transition: 1s;
+}
+
+.home .content a:hover{
+    
+    background: #1680AC;
+    padding: 15px 35px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
 }
   
 .home .media-icons{
@@ -131,6 +149,7 @@ section{
     flex-direction: column;
     transition: 0.5s ease;
 }
+
   
 .home .media-icons a{
     color: #fff;
@@ -144,6 +163,12 @@ section{
   
 .home .media-icons a:hover{
     transform: scale(1.3);
+    color: #2696E9;
+}
+
+.home .media-icons .insta:hover{
+    transform: scale(1.3);
+    color: #e92626;
 }
   
 .home video{
