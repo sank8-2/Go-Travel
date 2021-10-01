@@ -38,12 +38,12 @@
         <div class="content active">
           <h1>Heritage.<br><span>Of India</span></h1>
           <p>A land resounding with the riches and glories of opulent dynasties, powerful rulers, flourishing civilisations and profound history, India has a splendid heritage that is reflected in its architecture, monuments, arts, crafts, cultures and even religions.</p>
-          <a href="#">Read More</a>
+          <a href="heritage.html">Read More</a>
         </div>
         <div class="content"> 
           <h1>Indian<br><span>Monsoons</span></h1>
           <p>One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the most popular tourist destinations in the world.</p>
-          <a href="#">Read More</a>
+          <a href="monsoon.html">Read More</a>
         </div>
         <div class="content">
           <h1>Nature<br><span>And Wildlife</span></h1>
@@ -76,11 +76,7 @@
           <a href="#">Read More</a>
         </div>
         
-        <div class="media-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
+        
         <div class="slider-navigation">
             <div class="navbut active"></div>
             <div class="navbut"></div>
@@ -92,8 +88,23 @@
             <div class="navbut"></div>
         </div>
     </section>
-
+    <footer class="foot">
+      <div class="logo"><a href="index.html">Go Travel</a></div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="copyright">Copyrights 2021 <i class="far fa-copyright"></i></div>
+    </footer>
     <script type="text/javascript">
+        
+         //javascript for navigation bar effect on scroll
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        
         //Javacript for responsive navigation menu
         const menuBtn = document.querySelector(".menu-btn");
         const navigation = document.querySelector(".navigation");
