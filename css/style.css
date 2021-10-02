@@ -363,36 +363,36 @@ header .navigation .navigation-items a:hover:before{
 }
 
 .main .hello{
-    background: url(hello.jpg);
+    background: url(/media/hello.jpg);
     background-size: cover;
 }
 
 .main .yus{
     background-size: cover;
-    background: url(yus.jpg);
+    background: url(/media/yus.jpg);
 }
 
 .main .about{
 
-    background: url(about.jpg);
+    background: url(/media/about.jpg);
     background-size: cover;
 }
 
 .main .explore{
 
-    background: url(explore.jpg);
+    background: url(/media/explore.jpg);
     background-size: cover;
 }
 
 .main .blogs{
 
-    background: url(blogs.jpg);
+    background: url(/media/blogs.jpg);
     background-size: cover;
 }
 
 .main .contact{
 
-    background: url(contact.jpg);
+    background: url(/media/contact.jpg);
     background-size: cover;
     height: 90vh;
 }
