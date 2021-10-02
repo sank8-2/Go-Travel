@@ -372,7 +372,7 @@ header .navigation .navigation-items a:hover:before{
     font-size: 50px;
     text-align: vertical;
     color: rgb(241, 238, 255);
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
     text-orientation: upright;
 }
 
@@ -382,8 +382,7 @@ header .navigation .navigation-items a:hover:before{
     font-family: 'Gluten', cursive;
     font-size: 50px;
     color: rgb(241, 238, 255);
-    grid-area: heading;
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
     text-orientation: upright;
 }
 
@@ -395,7 +394,6 @@ header .navigation .navigation-items a:hover:before{
     font-weight: 500;
     line-height: 40px;
     color: rgb(241, 238, 255);
-    grid-area: para;
 }
 
 
@@ -417,7 +415,7 @@ header .navigation .navigation-items a:hover:before{
     height: 60%;
     width: 80%;
 }
-
+/* 
 .main p img{
     height: 100%;
     width: 100%;
@@ -425,7 +423,7 @@ header .navigation .navigation-items a:hover:before{
     grid-area: img;
     border: 10px solid rgb(245, 245, 245);
     box-shadow: inset 0 0 15px black;
-}
+} */
 
 /* 
 .main p{
@@ -439,8 +437,6 @@ header .navigation .navigation-items a:hover:before{
 .main .hello{
     background: url(https://i.postimg.cc/SQ8JLQ4c/hello.jpg);
     background-size: cover;
-    display: grid;
-    grid-template-areas: "heading para img";
 }
 
 .main .yus{
