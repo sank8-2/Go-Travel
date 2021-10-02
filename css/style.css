@@ -368,8 +368,8 @@ header .navigation .navigation-items a:hover:before{
 }
 
 .main .yus{
-    background-size: cover;
     background: url(https://i.postimg.cc/mZQgzd3w/yus.jpg);
+    background-size: cover;
 }
 
 .main .about{
