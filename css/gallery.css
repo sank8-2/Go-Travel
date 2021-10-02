@@ -21,7 +21,8 @@ img{
     border-radius: 8px;
 }
 .galleryContainer{
-    width:900px;
+    width: 900px;
+    /* height: 90vh; */
     /* max-height: ; */
     margin:0 auto;
     margin-top: 50px;
@@ -30,6 +31,7 @@ img{
     justify-content: space-between;
     align-items: center;
     position:relative;
+    /* padding-bottom: 10px; */
 }
 .gallery{
     position:relative;
@@ -51,6 +53,9 @@ img{
     z-index: 10;
 }
 
+.container{
+    height: calc(90vh-50px);
+}
 
 .galleryImage{
     position:absolute;
@@ -73,6 +78,7 @@ img{
     align-items: center;
     overflow-x:auto;
     overflow-y: hidden;
+    /* margin-bottom: 20%; */
 }
 .thumbnailImage{
     margin:0 5px;
@@ -233,6 +239,8 @@ header .navigation .navigation-items a:hover:before{
     background: #5682a1;
     transition: 0.5s ease;
     height: 10vh;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
 }
 
 .foot .logo{
