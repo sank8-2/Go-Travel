@@ -360,6 +360,24 @@ header .navigation .navigation-items a:hover:before{
 .main div{
     height: 100vh;
     scroll-snap-align: start;
+    padding: 20vh 20vh;
+}
+
+.main h1{
+    padding: 2vh;
+    background: rgba(27, 57, 90, 0.644);
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(241, 238, 255);
+}
+
+.main p{
+    padding: 2vh;
+    background: rgba(27, 57, 90, 0.644);
+    font-size: large;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgb(241, 238, 255);
 }
 
 .main .hello{
