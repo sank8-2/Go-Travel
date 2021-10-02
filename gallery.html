@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!--header part starts-->
+    <header>
+        <a href="index.html" class="brand">G<img class="globe" src="globe.gif" alt="Globe" width="25px"> Travel</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="explore.html">Explore</a>
+                <a href="blog.html">Blogs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider-navigation">
+        <div class="navbut active"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+    </div>
+
+   <!--header part ends-->
+      <div class="container">
+        <div class="galleryContainer">
+            <h1>Gallery <br class="font">Best Places To Hike & Trek The World With Us</h1>
+            <div class="gallery">
+                <input type="radio" name="controls" id="c1" checked>
+                <img src="media/p1.webp" id="i1" class="galleryImage">
+
+                <input type="radio" name="controls" id="c2">
+                <img src="media/p2.webp" id="i2" class="galleryImage">
+
+                <input type="radio" name="controls" id="c3">
+                <img src="media/p3.jpg" id="i3" class="galleryImage">
+
+                <input type="radio" name="controls" id="c4">
+                <img src="media/p4.jpg" id="i4" class="galleryImage">
+
+                <input type="radio" name="controls" id="c5">
+                <img src="media/p5.webp" id="i5" class="galleryImage">
+
+                <input type="radio" name="controls" id="c6">
+                <img src="media/p6.webp" id="i6" class="galleryImage">
+            </div>
+
+            <div class="thumbnails">
+               <label class="thumbnailImage" for="c1">
+                   <img src="media/p1.webp">
+               </label> 
+
+               <label class="thumbnailImage" for="c2">
+                <img src="media/p2.webp">
+               </label>
+
+               <label class="thumbnailImage" for="c3">
+                <img src="media/p3.jpg">
+               </label>
+
+               <label class="thumbnailImage" for="c4">
+                <img src="media/p4.jpg">
+              </label>
+
+              <label class="thumbnailImage" for="c5">
+                <img src="media/p5.webp">
+              </label>
+
+              <label class="thumbnailImage" for="c6">
+                <img src="media/p6.webp">
+              </label>
+               
+            </div>
+        </div>
+      </div>
+
+
+      <!--footer starts-->
+      <footer class="foot">
+        <div class="logo"><a href="index.html">Go Travel</a></div>
+        <div class="media-icons">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="copyright">Copyrights 2021 <i class="far fa-copyright"></i></div>
+      </footer>
+
+      <!--footer ends-->
+      <script type="text/javascript">
+        //javascript for navigation bar effect on scroll
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        
+        //Javascript for responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navigation.classList.toggle("active");
+        });
+    
+        //Javascript for video slider navigation
+        const btns = document.querySelectorAll(".navbut");
+        const slides = document.querySelectorAll(".video");
+        const contents = document.querySelectorAll(".content");
+    
+        var sliderNav = function(manual){
+          btns.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+    
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+    
+          contents.forEach((content) => {
+            content.classList.remove("active");
+          });
+    
+          btns[manual].classList.add("active");
+          slides[manual].classList.add("active");
+          contents[manual].classList.add("active");
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            sliderNav(i);
+          });
+        });
+        </script>
+ 
+</body>
+</html>
