@@ -363,36 +363,36 @@ header .navigation .navigation-items a:hover:before{
 }
 
 .main .hello{
-    background: url(/media/hello.jpg);
+    background: url(https://i.postimg.cc/SQ8JLQ4c/hello.jpg);
     background-size: cover;
 }
 
 .main .yus{
     background-size: cover;
-    background: url(/media/yus.jpg);
+    background: url(https://i.postimg.cc/mZQgzd3w/yus.jpg);
 }
 
 .main .about{
 
-    background: url(/media/about.jpg);
+    background: url(https://i.postimg.cc/BvtrTvr3/about.jpg);
     background-size: cover;
 }
 
 .main .explore{
 
-    background: url(/media/explore.jpg);
+    background: url(https://i.postimg.cc/SR0j036X/explore.jpg);
     background-size: cover;
 }
 
 .main .blogs{
 
-    background: url(/media/blogs.jpg);
+    background: url(https://i.postimg.cc/6QDmCfVV/blogs.jpg);
     background-size: cover;
 }
 
 .main .contact{
 
-    background: url(/media/contact.jpg);
+    background: url(https://i.postimg.cc/FRyD35Hm/contact.jpg);
     background-size: cover;
     height: 90vh;
 }
