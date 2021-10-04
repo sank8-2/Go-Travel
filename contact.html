@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive contact form</title>
+    <link rel="stylesheet" href="contact.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="brand">G<img class="globe" src="globe.gif" alt="Globe" width="25px"> Travel</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="explore.html">Explore</a>
+                <a href="blog.html">Blogs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider-navigation">
+        <div class="navbut active"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+        <div class="navbut"></div>
+    </div>
+
+    <!--alert messages start
+      <div class="alert-success">
+        <span>Message sent! Thank you for contacting us.</span>
+      </div>
+      <div class="alert-error">
+        <span>Something went wrong! Please try again.</span>
+      </div>
+    alert messages end-->
+
+    <!--contact section start-->
+     <div class="contact-section">
+       <div class="contact-info">
+
+            <div><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Address, City, Country</a></div>
+            <div><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">contact@gmail.com</a></div>
+            <div><i class="fa fa-phone" aria-hidden="true"></i><a href="#">+00 0000 000 000</a></div>
+            <div><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#">Mon - Fri 8:00 AM to 5:00 PM</a></div>
+       </div>
+       <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form class="contact" action="" method="POST">
+            <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+            <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" name="submit" class="send-btn" value="send">
+          </form>
+       </div>
+     </div>
+    <!--contact section end-->
+
+   <!--footer  section starts-->
+   <!--
+    <footer class="foot">
+        <div class="logo"><a href="index.html">Go Travel</a></div>
+        <div class="media-icons">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="copyright">Copyrights 2021 <i class="far fa-copyright"></i></div>
+      </footer>
+    -->  
+       <!--footer  section starts-->
+       <script type="text/javascript">
+       //javascript for navigation bar effect on scroll
+       window.addEventListener("scroll", function(){
+         var header = document.querySelector("header");
+         header.classList.toggle('sticky', window.scrollY > 0);
+       });
+       
+       //Javascript for responsive navigation menu
+       const menuBtn = document.querySelector(".menu-btn");
+       const navigation = document.querySelector(".navigation");
+   
+       menuBtn.addEventListener("click", () => {
+         menuBtn.classList.toggle("active");
+         navigation.classList.toggle("active");
+       });
+   
+       //Javascript for video slider navigation
+       const btns = document.querySelectorAll(".navbut");
+       const slides = document.querySelectorAll(".video");
+       const contents = document.querySelectorAll(".content");
+   
+       var sliderNav = function(manual){
+         btns.forEach((btn) => {
+           btn.classList.remove("active");
+         });
+   
+         slides.forEach((slide) => {
+           slide.classList.remove("active");
+         });
+   
+         contents.forEach((content) => {
+           content.classList.remove("active");
+         });
+   
+         btns[manual].classList.add("active");
+         slides[manual].classList.add("active");
+         contents[manual].classList.add("active");
+       }
+   
+       btns.forEach((btn, i) => {
+         btn.addEventListener("click", () => {
+           sliderNav(i);
+         });
+       });
+       </script>
+
+</body>
+</html>
